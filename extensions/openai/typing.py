@@ -1,6 +1,6 @@
 import json
 import time
-from typing import Dict, List
+from typing import Any, Dict, List
 
 from pydantic import BaseModel, Field
 
@@ -111,7 +111,7 @@ class ChatCompletionRequestParams(BaseModel):
     context: str | None = Field(default=None, description="Overwrites the value set by character field.")
     greeting: str | None = Field(default=None, description="Overwrites the value set by character field.")
     user_name: str | None = Field(default=None, description="Your name (the user). By default, it's \"You\".", alias="name1")
-    user_bio: str | None = Field(default=None, description="The user description/personality.")
+    user_bio: str | None = Field(default='', description="The user description/personality.")
     chat_template_str: str | None = Field(default=None, description="Jinja2 template for chat.")
 
     chat_instruct_command: str | None = None
@@ -192,7 +192,7 @@ class LogitsResponse(BaseModel):
 class ModelInfoResponse(BaseModel):
     model_name: str
     lora_names: List[str]
-
+    model_settings: Dict[str, Any]
 
 class ModelListResponse(BaseModel):
     model_names: List[str]

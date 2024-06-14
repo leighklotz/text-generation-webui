@@ -10,7 +10,8 @@ def get_current_model_info():
     return {
         'model_name': shared.model_name,
         'lora_names': shared.lora_names,
-        'loader': shared.args.loader
+        'loader': shared.args.loader,
+        'model_settings': get_model_metadata(shared.model_name)
     }
 
 
