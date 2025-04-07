@@ -1,3 +1,5 @@
 # Only used by the one-click installer.
 # Example:
 # --listen --api
+# removed: --trust-remote-code
+--listen --api --tensorcores --extension FPreloader --extension web_search --extension lynx --auto-devices --verbose --character Assistant
