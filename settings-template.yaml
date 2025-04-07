@@ -13,7 +13,7 @@ name1: You
 user_bio: ''
 custom_system_message: ''
 preset: min_p
-max_new_tokens: 512
+max_new_tokens: 4096
 max_new_tokens_min: 1
 max_new_tokens_max: 4096
 prompt_lookup_num_tokens: 0
