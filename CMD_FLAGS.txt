@@ -2,5 +2,4 @@
 # Example:
 # --listen --api
 # removed: --trust-remote-code
-# --tensorcores
---listen --api --extension FPreloader --extension web_search --extension lynx --auto-devices --verbose --character Assistant
+--tensorcores --listen --api --extension FPreloader --extension web_search --extension lynx --auto-devices --verbose --character Assistant
